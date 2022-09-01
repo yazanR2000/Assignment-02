@@ -78,16 +78,23 @@ class Assignment extends StatelessWidget {
                 _containerAndCard(_info[0]["info"]['gender'], Colors.blue,Colors.yellow),
               ],
             ),
-            Container(
-              width: double.infinity,
-              height: 200,
-              margin: const EdgeInsets.all(20),
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  fit: BoxFit.fill,
-                  image: NetworkImage(_info[1]["imageUrl"]),
-                )
-              ),
+            const SizedBox(height: 20,),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text("hi"),
+                Container(
+                  width: 350,
+                  height: 200,
+                  margin: const EdgeInsets.only(bottom: 20,right: 20,left: 20),
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      fit: BoxFit.fill,
+                      image: NetworkImage(_info[1]["imageUrl"]),
+                    )
+                  ),
+                ),
+              ],
             ),
             Row(
               children: [
